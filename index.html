@@ -1,35 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onalyn-Market</title>
+  <title>Onlayn Market - Eng yaxshi mahsulotlar</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to our website</h1>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Onlayn Market</span>
+      </div>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#products">Mahsulotlar</a></li>
+          <li><a href="#categories">Kategoriyalar</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#contact">Aloqa</a></li>
+        </ul>
+      </nav>
 
-        </li>
-      </ul>
-    </nav>
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <div class="contanier"></div>
-    <h2>Our products</h2>
-    <p>
-      Hasanboy Hakimov Shuhratjon o'g'li 1995 yil 03 oy 19marttda dunyoga kelgan
-    </p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Eng yaxshi mahsulotlar bir joyda</h1>
+        <p>Keng assortiment, arzon narxlar va tez yetkazib berish xizmati</p>
+        <button class="cta-btn">Hozir xarid qiling</button>
+      </div>
+      <div class="hero-image">
+        <div class="floating-card card-1">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Telefonlar</span>
+        </div>
+        <div class="floating-card card-2">
+          <i class="fas fa-laptop"></i>
+          <span>Noutbuklar</span>
+        </div>
+        <div class="floating-card card-3">
+          <i class="fas fa-headphones"></i>
+          <span>Aksessuarlar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2>Nima uchun bizni tanlaysiz?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Tez yetkazib berish</h3>
+            <p>24 soat ichida bepul yetkazib berish</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Xavfsiz to'lov</h3>
+            <p>Barcha to'lov usullari himoyalangan</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-undo"></i>
+            </div>
+            <h3>Qaytarish kafolati</h3>
+            <p>30 kun ichida bepul qaytarish</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 qo'llab-quvvatlash</h3>
+            <p>Har doim sizga yordam beramiz</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Mashhur mahsulotlar</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="product-badge">Yangi</div>
+            </div>
+            <div class="product-info">
+              <h3>iPhone 15 Pro</h3>
+              <p>Eng so'nggi texnologiya</p>
+              <div class="product-price">
+                <span class="old-price">$1,199</span>
+                <span class="new-price">$999</span>
+              </div>
+              <button class="add-to-cart">Savatchaga qo'shish</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-laptop"></i>
+              <div class="product-badge sale">Chegirma</div>
+            </div>
+            <div class="product-info">
+              <h3>MacBook Pro M3</h3>
+              <p>Professional ishlar uchun</p>
+              <div class="product-price">
+                <span class="old-price">$2,499</span>
+                <span class="new-price">$1,999</span>
+              </div>
+              <button class="add-to-cart">Savatchaga qo'shish</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <div class="product-info">
+              <h3>AirPods Pro</h3>
+              <p>Wireless quloqchinlar</p>
+              <div class="product-price">
+                <span class="new-price">$249</span>
+              </div>
+              <button class="add-to-cart">Savatchaga qo'shish</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="product-info">
+              <h3>iPad Air</h3>
+              <p>Kreativ ishlar uchun</p>
+              <div class="product-price">
+                <span class="new-price">$599</span>
+              </div>
+              <button class="add-to-cart">Savatchaga qo'shish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Biz haqimizda</h2>
+            <p>Onlayn Market - bu O'zbekistondagi eng yirik elektron tijorat platformasi. Biz 2020 yildan beri
+              mijozlarimizga eng yaxshi xizmat ko'rsatib kelmoqdamiz.</p>
+            <p>Bizning missiyamiz - har bir mijozimizga eng yaxshi mahsulotlarni eng arzon narxlarda taqdim etish.</p>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Mamnun mijozlar</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Mahsulotlar</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Qo'llab-quvvatlash</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-store"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Onlayn Market</span>
+          </div>
+          <p>Eng yaxshi mahsulotlar bir joyda</p>
+        </div>
+        <div class="footer-section">
+          <h3>Tezkor havolalar</h3>
+          <ul>
+            <li><a href="#home">Bosh sahifa</a></li>
+            <li><a href="#products">Mahsulotlar</a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Ijtimoiy tarmoqlar</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Onlayn Market. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
